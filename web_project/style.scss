@@ -1,5 +1,6 @@
 @import "header";
 @import "body";
+@import "variables";
 
 body{
   padding: 0;
@@ -10,3 +11,6 @@ body{
   width: 100%;
 }
 
+ul{
+  list-style-type: none;
+}

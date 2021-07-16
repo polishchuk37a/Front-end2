@@ -1,0 +1,244 @@
+@import "variables";
+
+%food-form {
+  width: 360px;
+  height: 241px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 35px;
+}
+
+%food-title{
+  padding-top: 20px;
+  width: 310px;
+  height: 70px;
+  font-family: $fontPoppins;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: $colorDarkGray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%food-text{
+  width: 298px;
+  height: 55px;
+  font-family: $fontRoboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $colorDarkGray;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%see-details{
+  width: 80px;
+  height: 24px;
+  font-family: $fontRoboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $colorOrange;
+  text-decoration: none;
+}
+
+.food_for_pets{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 159px;
+
+  .first_variant{
+    @extend %food-form;
+    img{
+      position: absolute;
+      margin: -27px 148px;
+      mix-blend-mode: darken;
+    }
+    .first-food{
+      margin: -19px 161px;
+    }
+    .first_variant-title{
+      @extend %food-title;
+    }
+    .first_variant-text {
+      @extend %food-text;
+    }
+    .see_details a{
+      @extend %see-details;
+    }
+    ul{
+      padding-left: 0;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .second_variant{
+    margin-left: 30px;
+    width: 360px;
+    height: 241px;
+    background: $colorWhite;
+    border-radius: 8px;
+    box-shadow: 0 0 10px $colorLightOrange;
+    img{
+      position: absolute;
+      margin: -27px 148px;
+      mix-blend-mode: darken;
+    }
+    .second-food{
+      margin: -28px 153px;
+    }
+    .first_variant-title{
+      @extend %food-title;
+    }
+    .first_variant-text{
+      @extend %food-text;
+    }
+    .see_details a{
+      @extend %see-details;
+    }
+    ul{
+      padding-left: 0;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .third_variant{
+    @extend %food-form;
+    img{
+      position: absolute;
+      margin: -27px 148px;
+      mix-blend-mode: darken;
+    }
+    .third-food{
+      margin: -19px 161px;
+    }
+    .first_variant-title{
+      @extend %food-title;
+    }
+    .first_variant-text{
+      @extend %food-text;
+    }
+    .see_details a{
+      @extend %see-details;
+    }
+    ul{
+      padding-left: 0;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.popular_products{
+  padding-top: 115px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.popular_products{
+  margin-left: auto;
+  margin-right: auto;
+}
+.popular_products-title{
+  width: 280px;
+  height: 42px;
+  font-family: $fontPoppins;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.popular_products-text{
+  width: 505px;
+  height: 65px;
+  font-family: $fontRoboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $colorDarkGray;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%illustration-block{
+  width: 555px;
+  height: 420px;
+  background: $colorLightOrange;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.leash_block{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  .leash_illustration{
+    @extend %illustration-block;
+    margin-left: 30px;
+  }
+  img{
+    margin: 0 auto;
+    mix-blend-mode: darken;
+  }
+  .leash_title{
+    margin-left: 30px;
+    width: 555px;
+    height: 25px;
+    font-family: $fontPoppins;;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+  }
+  .see_details a{
+    @extend %see-details;
+  }
+  li{
+   text-align: center;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+%leash_second{
+  width: 360px;
+  height: 273px;
+  background: $colorLightOrange;
+  border-radius: 10px;
+}
+
+.leash_second_block{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 66px;
+  .block{
+    @extend %leash_second;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  img{
+    mix-blend-mode: darken;
+    margin: 0 auto;
+  }
+}

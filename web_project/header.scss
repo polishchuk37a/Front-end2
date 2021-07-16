@@ -1,17 +1,14 @@
-$fontPoppins: Poppins;
-$fontRoboto: Roboto;
-$colorBlack: #000000;
-$colorOrange: #E27B3A;
+@import "variables";
 
 .header_background{
   width: 100%;
   height: 693px;
-  background: linear-gradient(113deg, #fff 63%, #FCF2EB 37%);
+  background: linear-gradient(106deg, #fff 68%, #FCF2EB 32%)
 }
 
 .header_elements{
   display: flex;
-  width: 1300px;
+  width: 1150px;
   margin: 0 auto;
 }
 
@@ -31,7 +28,7 @@ $colorOrange: #E27B3A;
 .header_links{
   margin-top: 10px;
   align-items: center;
-  margin-left: 230px;
+  margin-left: 200px;
   ul {
     padding-top: 10px;
   display: flex;
@@ -63,7 +60,7 @@ $colorOrange: #E27B3A;
 }
 
 .header_block{
-  width: 1300px;
+  width: 1150px;
   margin: 0 auto;
   display : flex;
   h1{
