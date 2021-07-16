@@ -42,7 +42,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  color: black;
+  color: #000000;
 }
 .header_links a:hover {
   text-decoration: underline;
@@ -77,6 +77,7 @@
   z-index: 1;
   position: relative;
   margin-left: 370px;
+  mix-blend-mode: darken;
 }
 
 body {
