@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 %food-form {
   width: 360px;
@@ -226,6 +227,13 @@
   border-radius: 10px;
 }
 
+%view-details{
+  @include font_style-Roboto;
+  font-size: 16px;
+  color: $colorOrange;
+  text-decoration: none;
+}
+
 .leash_second_block{
   width: 1200px;
   display: flex;
@@ -240,5 +248,214 @@
   img{
     mix-blend-mode: darken;
     margin: 0 auto;
+  }
+  .second_leash-title{
+    text-align: center;
+    margin-left: 30px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .view_details a{
+    @extend %view-details;
+
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  li{
+    text-align: center;
+  }
+}
+
+.view_all_products{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 46px;
+  .button_view_products{
+    width: 185px;
+    height: 48px;
+    border: 1px solid rgba(226,123,58,0.15);
+    border-radius: 4px;
+   @include font_style-Roboto;
+    font-size: 16px;
+    color: $colorOrange;
+    margin-left: 15px;
+    background: white;
+  }
+}
+
+.dog_care{
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 130px;
+  clip-path: url(#border);
+  .mask {
+    position: absolute;
+    width: 730px;
+    height: 539px;
+    clip-path: url(#my-clip-path);
+    background: white;
+    z-index: 5;
+  }
+
+
+  .dog_care-title{
+    padding-top: 125px;
+    width: 127px;
+    height: 10px;
+    font-family: $fontRoboto;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #E27B3A;
+    opacity: 0.8;
+  }
+  .dog_care-desc{
+    width: 487px;
+    height: 86px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .dog_care-text{
+    width: 487px;
+    height: 70px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #170C04;
+    opacity: 0.6;
+  }
+  .dog_care-buttons{
+    padding-top: 40px;
+    display: flex;
+  }
+  .button_appointment{
+    width: 189px;
+    height: 48px;
+    background: $colorOrange;
+    border-radius: 24px;
+    border: none;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+  .button_details{
+    margin-left: 30px;
+    background: white;
+    width: 139px;
+    height: 48px;
+    border: 1px solid rgba(226,123,58,0.15);
+    border-radius: 24px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorOrange;
+  }
+}
+
+.monthly_subscription{
+  width: 1200px;
+  margin: 0 auto;
+  .subscription-title{
+    padding-top: 100px;
+    width: 330px;
+    height: 93px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.dogs{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  .first_dog{
+    text-align: center;
+  }
+  .second_dog{
+    text-align: center;
+  }
+  .third_dog{
+    text-align: center;
+  }
+  h1{
+    padding-top: 40px;
+    width: 360px;
+    height: 49px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  h2{
+    width: 359px;
+    height: 65px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #170C04;
+    opacity: 0.6;
+  }
+  ul{
+    padding-left: 0;
+  }
+  a{
+    @include font_style-Roboto;
+    font-size: 16px;
+    text-decoration: none;
+    color: $colorOrange;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.block_button_subs{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 45px;
+  .button_subscribe{
+    width: 131px;
+    height: 48px;
+    background: #E27B3A;
+    border-radius: 24px;
+    border: none;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+}
+
+.dog_accessories{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  .popular_products{
+    width: 554px;
+    height: 46px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
   }
 }
