@@ -284,6 +284,9 @@
     margin-left: 15px;
     background: white;
   }
+  .button_view_products:hover{
+    background: #f0ebeb;
+  }
 }
 
 .dog_care{
@@ -515,10 +518,10 @@
   }
 }
 
-.testimonial {
+.products{
   width: 1200px;
   margin: 0 auto;
-  .products{
+  .products-title{
     padding-top: 90px;
     font-family: $fontPoppins;
     font-style: normal;
@@ -527,6 +530,14 @@
     line-height: 45px;
     text-align: center;
   }
+}
+
+.testimonial {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
   .testimonial_block {
     margin: 0 auto;
     width: 555px;
@@ -534,6 +545,8 @@
     background: $colorWhite;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
   }
   .swiper-container {
     width: 555px;
@@ -606,5 +619,87 @@
     text-align: center;
     color: $colorDarkGray;
     opacity: 0.6;
+  }
+  .arrows{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 73px;
+    margin-bottom: 50px;
+  }
+}
+
+.form{
+  width: 1200px;
+  margin: 0 auto;
+  .form_message{
+    display: flex;
+    transform: rotate(-1deg);
+    margin-top: 86px;
+    width: 1140px;
+    height: 346px;
+    background: #2E96FF;
+    border-radius: 10px;
+  }
+  .form_title{
+    width: 423px;
+    height: 72px;
+    font-family: $fontPoppins;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+    transform: rotate(1deg);
+    padding-top: 70px;
+    padding-left: 69px;
+  }
+  .form_desc{
+    width: 423px;
+    height: 52px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorWhite;
+    opacity: 0.7;
+    transform: rotate(1deg);
+    padding-left: 69px;
+  }
+  .form_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(1deg);
+  }
+  .input_field{
+    width: 487px;
+    height: 70px;
+    background: $colorWhite;
+    border-radius: 10px;
+    border: none;
+    padding-left: 21px;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+  }
+  ::placeholder{
+    @include font_style-Roboto;
+    font-size: 16px;
+  }
+  .message_box{
+    background: $colorWhite;
+    border-radius: 10px;
+  }
+  .send_button{
+    width: 115px;
+    height: 72px;
+    background: #E27B3A;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    font-family: $fontRoboto;
+    font-weight: 500;
+    font-size: 18px;
+    color: $colorWhite;
   }
 }

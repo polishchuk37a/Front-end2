@@ -250,9 +250,11 @@
             </div>
         </div>
 
+        <div class="products">
+            <h1 class="products-title">Products Testimonial</h1>
+        </div>
 
         <div class="testimonial">
-            <h1 class="products">Products Testimonial</h1>
             <div class="testimonial_block">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -281,15 +283,101 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <img class="quotes" src="Images/Group1.png" alt="">
+                                <img class="man-icon" src="Images/icon_testimonia2.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</h1>
+                            </div>
+                            <div class="mark">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="text_with_quotes">
+                                <div class="quotes_a">
+                                    <h1 class="quotes-text">Wishering Street</h1>
+                                    <h1 class="quotes-desc">UI&UX Designer</h1>
+                                </div>
+                                <div class="quotes_b">
+                                    <img class="quotes2" src="Images/Group2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <img class="quotes" src="Images/Group1.png" alt="">
+                                <img class="man-icon" src="Images/icon_testimonial3.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="testimonial-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</h1>
+                            </div>
+                            <div class="mark">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="text_with_quotes">
+                                <div class="quotes_a">
+                                    <h1 class="quotes-text">Coocking Street</h1>
+                                    <h1 class="quotes-desc">UI&UX Designer</h1>
+                                </div>
+                                <div class="quotes_b">
+                                    <img class="quotes2" src="Images/Group2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="arrows">
+                <img class="button-prev" src="Images/first_arrow.svg" alt="">
+                <img class="button-next" src="Images/second_arrow.svg" alt="">
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="form_message">
+                <div>
+                    <h1 class="form_title">Dogs leave paw prints forever.</h1>
+                    <h1 class="form_desc">A dog in heat needs more than shade The more people I meet the more I like my dog.</h1>
+                </div>
+
+                <div class="form_input">
+                    <div class="message_box">
+                        <input class="input_field" type="text"  placeholder="Enter your message">
+                        <button class="send_button">Send</button>
                     </div>
 
                 </div>
             </div>
         </div>
-
     </section>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 </html>
