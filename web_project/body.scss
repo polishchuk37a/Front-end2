@@ -444,8 +444,14 @@
   }
 }
 
+%accessories{
+  width: 262px;
+  height: 170px;
+  border-radius: 5px;
+}
+
 .dog_accessories{
-  width: 1200px;
+  width: 1150px;
   display: flex;
   margin: 0 auto;
   .popular_products{
@@ -457,5 +463,148 @@
     font-size: 32px;
     line-height: 45px;
     text-align: center;
+  }
+  .second_variant_accessories{
+    width: 555px;
+    height: 509px;
+    margin-top: 115px;
+    border-radius: 10px;
+    background: rgba(#C4154B, 0.1);
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  img{
+    mix-blend-mode: darken;
+    margin: 0 auto;
+  }
+  .first_variant-acc{
+    display: flex;
+    justify-content: space-between;
+  }
+  .second_variant-acc{
+    display: flex;
+    justify-content: space-between;
+  }
+  .first_background{
+    @extend %accessories;
+    background: rgba(#900A08, 0.1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .second_background{
+    @extend %accessories;
+    background: rgba(#243D7E, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  .third_background{
+    @extend %accessories;
+    margin-top: 30px;
+    background: rgba(#800125, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  .fourth_background{
+    @extend %accessories;
+    margin-top: 30px;
+    background: rgba(#C48CAE, 0.1);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.testimonial {
+  width: 1200px;
+  margin: 0 auto;
+  .products{
+    padding-top: 90px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .testimonial_block {
+    margin: 0 auto;
+    width: 555px;
+    height: 272px;
+    background: $colorWhite;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+  }
+  .swiper-container {
+    width: 555px;
+    height: 272px;
+  }
+  .icon {
+    display: flex;
+  }
+  .quotes {
+    opacity: 0.1;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .quotes2 {
+    opacity: 0.1;
+  }
+  .man-icon {
+    margin-top: 30px;
+    margin-left: 185px;
+    width: 30px;
+    height: 30px;
+  }
+  .testimonial-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 495px;
+    height: 65px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $colorDarkGray;
+    opacity: 0.7;
+  }
+  .fa{
+    margin-right: 0;
+    margin-left: 0;
+    color: #E2E2E2;
+  }
+  .checked {
+    color: $colorOrange;
+  }
+  .mark{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .text_with_quotes{
+    margin-top: 23px;
+    display: flex;
+  }
+  .quotes_a{
+    margin-left: 220px;
+  }
+  .quotes_b{
+    margin-right: 30px;
+    margin-left: auto;
+  }
+  .quotes-text{
+    margin-top: 0;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .quotes-desc{
+    margin-top: 0;
+    @include font_style-Roboto;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: $colorDarkGray;
+    opacity: 0.6;
   }
 }
