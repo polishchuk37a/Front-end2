@@ -1,0 +1,707 @@
+.food_for_pets .third_variant, .food_for_pets .first_variant {
+  width: 360px;
+  height: 241px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 35px;
+}
+
+.food_for_pets .third_variant .first_variant-title, .food_for_pets .second_variant .first_variant-title, .food_for_pets .first_variant .first_variant-title {
+  padding-top: 20px;
+  width: 310px;
+  height: 70px;
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: #170C04;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food_for_pets .third_variant .first_variant-text, .food_for_pets .second_variant .first_variant-text, .food_for_pets .first_variant .first_variant-text {
+  width: 298px;
+  height: 55px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leash_block .see_details a, .food_for_pets .third_variant .see_details a, .food_for_pets .second_variant .see_details a, .food_for_pets .first_variant .see_details a {
+  width: 80px;
+  height: 24px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+  text-decoration: none;
+}
+
+.food_for_pets {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 159px;
+}
+.food_for_pets .first_variant img {
+  position: absolute;
+  margin: -27px 148px;
+  mix-blend-mode: darken;
+}
+.food_for_pets .first_variant .first-food {
+  margin: -19px 161px;
+}
+.food_for_pets .first_variant ul {
+  padding-left: 0;
+  text-align: center;
+}
+.food_for_pets .first_variant a:hover {
+  text-decoration: underline;
+}
+.food_for_pets .second_variant {
+  margin-left: 30px;
+  width: 360px;
+  height: 241px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #FCF2EB;
+}
+.food_for_pets .second_variant img {
+  position: absolute;
+  margin: -27px 148px;
+  mix-blend-mode: darken;
+}
+.food_for_pets .second_variant .second-food {
+  margin: -28px 153px;
+}
+.food_for_pets .second_variant ul {
+  padding-left: 0;
+  text-align: center;
+}
+.food_for_pets .second_variant a:hover {
+  text-decoration: underline;
+}
+.food_for_pets .third_variant img {
+  position: absolute;
+  margin: -27px 148px;
+  mix-blend-mode: darken;
+}
+.food_for_pets .third_variant .third-food {
+  margin: -19px 161px;
+}
+.food_for_pets .third_variant ul {
+  padding-left: 0;
+  text-align: center;
+}
+.food_for_pets .third_variant a:hover {
+  text-decoration: underline;
+}
+
+.popular_products {
+  padding-top: 115px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.popular_products {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popular_products-title {
+  width: 280px;
+  height: 42px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popular_products-text {
+  width: 505px;
+  height: 65px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leash_block .leash_illustration {
+  width: 555px;
+  height: 420px;
+  background: #FCF2EB;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.leash_block {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.leash_block .leash_illustration {
+  margin-left: 30px;
+}
+.leash_block img {
+  margin: 0 auto;
+  mix-blend-mode: darken;
+}
+.leash_block .leash_title {
+  margin-left: 30px;
+  width: 555px;
+  height: 25px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+.leash_block li {
+  text-align: center;
+}
+.leash_block a:hover {
+  text-decoration: underline;
+}
+
+.leash_second_block .block {
+  width: 360px;
+  height: 273px;
+  background: #FCF2EB;
+  border-radius: 10px;
+}
+
+.leash_second_block .view_details a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #E27B3A;
+  text-decoration: none;
+}
+
+.leash_second_block {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 66px;
+}
+.leash_second_block .block {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.leash_second_block img {
+  mix-blend-mode: darken;
+  margin: 0 auto;
+}
+.leash_second_block .second_leash-title {
+  text-align: center;
+  margin-left: 30px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.leash_second_block a:hover {
+  text-decoration: underline;
+}
+.leash_second_block li {
+  text-align: center;
+}
+
+.view_all_products {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 46px;
+}
+.view_all_products .button_view_products {
+  width: 185px;
+  height: 48px;
+  border: 1px solid rgba(226, 123, 58, 0.15);
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #E27B3A;
+  margin-left: 15px;
+  background: white;
+}
+.view_all_products .button_view_products:hover {
+  background: #f0ebeb;
+  cursor: pointer;
+}
+
+.dog_care {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 130px;
+  clip-path: url(#border);
+}
+.dog_care .mask {
+  position: absolute;
+  width: 730px;
+  height: 539px;
+  clip-path: url(#my-clip-path);
+  background: white;
+  z-index: 5;
+}
+.dog_care .dog_care-title {
+  padding-top: 125px;
+  width: 127px;
+  height: 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #E27B3A;
+  opacity: 0.8;
+}
+.dog_care .dog_care-desc {
+  width: 487px;
+  height: 86px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+}
+.dog_care .dog_care-text {
+  width: 487px;
+  height: 70px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170C04;
+  opacity: 0.6;
+}
+.dog_care .dog_care-buttons {
+  padding-top: 40px;
+  display: flex;
+}
+.dog_care .button_appointment {
+  width: 189px;
+  height: 48px;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.dog_care .button_appointment:hover {
+  background: #f7a048;
+  cursor: pointer;
+}
+.dog_care .button_details {
+  margin-left: 30px;
+  background: white;
+  width: 139px;
+  height: 48px;
+  border: 1px solid rgba(226, 123, 58, 0.15);
+  border-radius: 24px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E27B3A;
+}
+.dog_care .button_details:hover {
+  cursor: pointer;
+  background: #f0ebeb;
+}
+
+.monthly_subscription {
+  width: 1200px;
+  margin: 0 auto;
+}
+.monthly_subscription .subscription-title {
+  padding-top: 100px;
+  width: 330px;
+  height: 93px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dogs {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.dogs .first_dog {
+  text-align: center;
+}
+.dogs .second_dog {
+  text-align: center;
+}
+.dogs .third_dog {
+  text-align: center;
+}
+.dogs h1 {
+  padding-top: 40px;
+  width: 360px;
+  height: 49px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+.dogs h2 {
+  width: 359px;
+  height: 65px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+.dogs ul {
+  padding-left: 0;
+}
+.dogs a {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: #E27B3A;
+}
+.dogs a:hover {
+  text-decoration: underline;
+}
+
+.block_button_subs {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 45px;
+}
+.block_button_subs .button_subscribe {
+  width: 131px;
+  height: 48px;
+  background: #E27B3A;
+  border-radius: 24px;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.block_button_subs .button_subscribe:hover {
+  background: #f7a048;
+  cursor: pointer;
+}
+
+.dog_accessories .fourth_background, .dog_accessories .third_background, .dog_accessories .second_background, .dog_accessories .first_background {
+  width: 262px;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.dog_accessories {
+  width: 1150px;
+  display: flex;
+  margin: 0 auto;
+}
+.dog_accessories .popular_products {
+  width: 554px;
+  height: 46px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: center;
+}
+.dog_accessories .second_variant_accessories {
+  width: 555px;
+  height: 509px;
+  margin-top: 115px;
+  border-radius: 10px;
+  background: rgba(196, 21, 75, 0.1);
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.dog_accessories img {
+  mix-blend-mode: darken;
+  margin: 0 auto;
+}
+.dog_accessories .first_variant-acc {
+  display: flex;
+  justify-content: space-between;
+}
+.dog_accessories .second_variant-acc {
+  display: flex;
+  justify-content: space-between;
+}
+.dog_accessories .first_background {
+  background: rgba(144, 10, 8, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.dog_accessories .second_background {
+  background: rgba(36, 61, 126, 0.1);
+  display: flex;
+  align-items: center;
+}
+.dog_accessories .third_background {
+  margin-top: 30px;
+  background: rgba(128, 1, 37, 0.1);
+  display: flex;
+  align-items: center;
+}
+.dog_accessories .fourth_background {
+  margin-top: 30px;
+  background: rgba(196, 140, 174, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.products {
+  width: 1200px;
+  margin: 0 auto;
+}
+.products .products-title {
+  padding-top: 90px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.testimonial {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+.testimonial .testimonial_block {
+  margin: 0 auto;
+  width: 555px;
+  height: 272px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.testimonial .swiper-container {
+  width: 555px;
+  height: 272px;
+}
+.testimonial .icon {
+  display: flex;
+}
+.testimonial .quotes {
+  opacity: 0.1;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.testimonial .quotes2 {
+  opacity: 0.1;
+}
+.testimonial .man-icon {
+  margin-top: 30px;
+  margin-left: 185px;
+  width: 30px;
+  height: 30px;
+}
+.testimonial .testimonial-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 495px;
+  height: 65px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.7;
+}
+.testimonial .fa {
+  margin-right: 0;
+  margin-left: 0;
+  color: #E2E2E2;
+}
+.testimonial .checked {
+  color: #E27B3A;
+}
+.testimonial .mark {
+  margin-top: 20px;
+  text-align: center;
+}
+.testimonial .text_with_quotes {
+  margin-top: 23px;
+  display: flex;
+}
+.testimonial .quotes_a {
+  margin-left: 220px;
+}
+.testimonial .quotes_b {
+  margin-right: 30px;
+  margin-left: auto;
+}
+.testimonial .quotes-text {
+  margin-top: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.testimonial .quotes-desc {
+  margin-top: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #170C04;
+  opacity: 0.6;
+}
+.testimonial .arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 73px;
+  margin-bottom: 50px;
+}
+.testimonial .button-prev:hover {
+  cursor: pointer;
+}
+.testimonial .button-next:hover {
+  cursor: pointer;
+}
+
+.form {
+  width: 1200px;
+  margin: 0 auto;
+}
+.form .form_message {
+  display: flex;
+  transform: rotate(-1deg);
+  margin-top: 86px;
+  width: 1140px;
+  height: 346px;
+  background: #2E96FF;
+  border-radius: 10px;
+}
+.form .form_title {
+  width: 423px;
+  height: 72px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  transform: rotate(1deg);
+  padding-top: 70px;
+  padding-left: 69px;
+}
+.form .form_desc {
+  width: 423px;
+  height: 52px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  transform: rotate(1deg);
+  padding-left: 69px;
+}
+.form .form_input {
+  margin-top: 10px;
+  margin-left: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(1deg);
+}
+.form .input_field {
+  min-width: 350px;
+  height: 70px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  padding-left: 21px;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+.form ::placeholder {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.form .message_box {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.form .send_button {
+  width: 115px;
+  height: 75px;
+  background: #E27B3A;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.form .send_button:hover {
+  background: #f7a048;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=body.css.map */

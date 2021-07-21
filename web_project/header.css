@@ -1,12 +1,12 @@
 .header_background {
   width: 100%;
   height: 693px;
-  background: linear-gradient(113deg, #fff 63%, #FCF2EB 37%);
+  background: linear-gradient(106deg, #fff 68%, #FCF2EB 32%);
 }
 
 .header_elements {
   display: flex;
-  width: 1300px;
+  width: 1150px;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
   margin-top: 10px;
 }
 .header_icon h1 {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   width: 45px;
   height: 26px;
   font-weight: 500;
@@ -26,7 +26,7 @@
 .header_links {
   margin-top: 10px;
   align-items: center;
-  margin-left: 230px;
+  margin-left: 200px;
 }
 .header_links ul {
   padding-top: 10px;
@@ -38,7 +38,7 @@
   text-decoration: none;
   width: 66px;
   height: 19px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -57,14 +57,14 @@
 }
 
 .header_block {
-  width: 1300px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 .header_block h1 {
   width: 613px;
   height: 171px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
@@ -73,11 +73,54 @@
   position: absolute;
   z-index: 2;
 }
-.header_block img {
+.header_block .puppy_image {
   z-index: 1;
   position: relative;
   margin-left: 370px;
-  mix-blend-mode: darken;
+  width: 900px;
+  height: 600px;
+}
+
+.button-prev-header {
+  padding-bottom: 300px;
+  width: 32px;
+  height: 32px;
+  transform: rotate(180deg);
+  margin: auto;
+}
+
+.button-prev-header:hover {
+  cursor: pointer;
+}
+
+.button-next-header {
+  padding-top: 300px;
+  width: 32px;
+  height: 32px;
+  line-height: 16px;
+  margin: auto;
+}
+
+.button-next-header:hover {
+  cursor: pointer;
+}
+
+.prev-arrow {
+  width: 35px;
+  height: 600px;
+  display: flex;
+}
+
+.next-arrow {
+  width: 35px;
+  height: 600px;
+  display: flex;
+}
+
+.swiper-header-container {
+  width: 1300px;
+  height: 600px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=header.css.map */

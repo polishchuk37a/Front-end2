@@ -1,0 +1,730 @@
+@import "variables";
+@import "mixins";
+
+%food-form {
+  width: 360px;
+  height: 241px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: 35px;
+}
+
+%food-title{
+  padding-top: 20px;
+  width: 310px;
+  height: 70px;
+  font-family: $fontPoppins;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: $colorDarkGray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%food-text{
+  width: 298px;
+  height: 55px;
+  font-family: $fontRoboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $colorDarkGray;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%see-details{
+  width: 80px;
+  height: 24px;
+  font-family: $fontRoboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $colorOrange;
+  text-decoration: none;
+}
+
+.food_for_pets{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 159px;
+
+  .first_variant{
+    @extend %food-form;
+    img{
+      position: absolute;
+      margin: -27px 148px;
+      mix-blend-mode: darken;
+    }
+    .first-food{
+      margin: -19px 161px;
+    }
+    .first_variant-title{
+      @extend %food-title;
+    }
+    .first_variant-text {
+      @extend %food-text;
+    }
+    .see_details a{
+      @extend %see-details;
+    }
+    ul{
+      padding-left: 0;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .second_variant{
+    margin-left: 30px;
+    width: 360px;
+    height: 241px;
+    background: $colorWhite;
+    border-radius: 8px;
+    box-shadow: 0 0 10px $colorLightOrange;
+    img{
+      position: absolute;
+      margin: -27px 148px;
+      mix-blend-mode: darken;
+    }
+    .second-food{
+      margin: -28px 153px;
+    }
+    .first_variant-title{
+      @extend %food-title;
+    }
+    .first_variant-text{
+      @extend %food-text;
+    }
+    .see_details a{
+      @extend %see-details;
+    }
+    ul{
+      padding-left: 0;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .third_variant{
+    @extend %food-form;
+    img{
+      position: absolute;
+      margin: -27px 148px;
+      mix-blend-mode: darken;
+    }
+    .third-food{
+      margin: -19px 161px;
+    }
+    .first_variant-title{
+      @extend %food-title;
+    }
+    .first_variant-text{
+      @extend %food-text;
+    }
+    .see_details a{
+      @extend %see-details;
+    }
+    ul{
+      padding-left: 0;
+      text-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.popular_products{
+  padding-top: 115px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.popular_products{
+  margin-left: auto;
+  margin-right: auto;
+}
+.popular_products-title{
+  width: 280px;
+  height: 42px;
+  font-family: $fontPoppins;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.popular_products-text{
+  width: 505px;
+  height: 65px;
+  font-family: $fontRoboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $colorDarkGray;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%illustration-block{
+  width: 555px;
+  height: 420px;
+  background: $colorLightOrange;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.leash_block{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  .leash_illustration{
+    @extend %illustration-block;
+    margin-left: 30px;
+  }
+  img{
+    margin: 0 auto;
+    mix-blend-mode: darken;
+  }
+  .leash_title{
+    margin-left: 30px;
+    width: 555px;
+    height: 25px;
+    font-family: $fontPoppins;;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+  }
+  .see_details a{
+    @extend %see-details;
+  }
+  li{
+   text-align: center;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+%leash_second{
+  width: 360px;
+  height: 273px;
+  background: $colorLightOrange;
+  border-radius: 10px;
+}
+
+%view-details{
+  @include font_style-Roboto;
+  font-size: 16px;
+  color: $colorOrange;
+  text-decoration: none;
+}
+
+.leash_second_block{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 66px;
+  .block{
+    @extend %leash_second;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  img{
+    mix-blend-mode: darken;
+    margin: 0 auto;
+  }
+  .second_leash-title{
+    text-align: center;
+    margin-left: 30px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .view_details a{
+    @extend %view-details;
+
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  li{
+    text-align: center;
+  }
+}
+
+.view_all_products{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 46px;
+  .button_view_products{
+    width: 185px;
+    height: 48px;
+    border: 1px solid rgba(226,123,58,0.15);
+    border-radius: 4px;
+   @include font_style-Roboto;
+    font-size: 16px;
+    color: $colorOrange;
+    margin-left: 15px;
+    background: white;
+  }
+  .button_view_products:hover{
+    background: #f0ebeb;
+    cursor: pointer;
+  }
+}
+
+.dog_care{
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 130px;
+  clip-path: url(#border);
+  .mask {
+    position: absolute;
+    width: 730px;
+    height: 539px;
+    clip-path: url(#my-clip-path);
+    background: white;
+    z-index: 5;
+  }
+
+
+  .dog_care-title{
+    padding-top: 125px;
+    width: 127px;
+    height: 10px;
+    font-family: $fontRoboto;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #E27B3A;
+    opacity: 0.8;
+  }
+  .dog_care-desc{
+    width: 487px;
+    height: 86px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .dog_care-text{
+    width: 487px;
+    height: 70px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #170C04;
+    opacity: 0.6;
+  }
+  .dog_care-buttons{
+    padding-top: 40px;
+    display: flex;
+  }
+  .button_appointment{
+    width: 189px;
+    height: 48px;
+    background: $colorOrange;
+    border-radius: 24px;
+    border: none;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+  .button_appointment:hover{
+    background: #f7a048;
+    cursor: pointer;
+  }
+  .button_details{
+    margin-left: 30px;
+    background: white;
+    width: 139px;
+    height: 48px;
+    border: 1px solid rgba(226,123,58,0.15);
+    border-radius: 24px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorOrange;
+  }
+  .button_details:hover{
+    cursor: pointer;
+    background: #f0ebeb;
+  }
+}
+
+.monthly_subscription{
+  width: 1200px;
+  margin: 0 auto;
+  .subscription-title{
+    padding-top: 100px;
+    width: 330px;
+    height: 93px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.dogs{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  .first_dog{
+    text-align: center;
+  }
+  .second_dog{
+    text-align: center;
+  }
+  .third_dog{
+    text-align: center;
+  }
+  h1{
+    padding-top: 40px;
+    width: 360px;
+    height: 49px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  h2{
+    width: 359px;
+    height: 65px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #170C04;
+    opacity: 0.6;
+  }
+  ul{
+    padding-left: 0;
+  }
+  a{
+    @include font_style-Roboto;
+    font-size: 16px;
+    text-decoration: none;
+    color: $colorOrange;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.block_button_subs{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 45px;
+  .button_subscribe{
+    width: 131px;
+    height: 48px;
+    background: #E27B3A;
+    border-radius: 24px;
+    border: none;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .button_subscribe:hover{
+    background: #f7a048;
+    cursor: pointer;
+  }
+}
+
+%accessories{
+  width: 262px;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.dog_accessories{
+  width: 1150px;
+  display: flex;
+  margin: 0 auto;
+  .popular_products{
+    width: 554px;
+    height: 46px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .second_variant_accessories{
+    width: 555px;
+    height: 509px;
+    margin-top: 115px;
+    border-radius: 10px;
+    background: rgba(#C4154B, 0.1);
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  img{
+    mix-blend-mode: darken;
+    margin: 0 auto;
+  }
+  .first_variant-acc{
+    display: flex;
+    justify-content: space-between;
+  }
+  .second_variant-acc{
+    display: flex;
+    justify-content: space-between;
+  }
+  .first_background{
+    @extend %accessories;
+    background: rgba(#900A08, 0.1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .second_background{
+    @extend %accessories;
+    background: rgba(#243D7E, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  .third_background{
+    @extend %accessories;
+    margin-top: 30px;
+    background: rgba(#800125, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  .fourth_background{
+    @extend %accessories;
+    margin-top: 30px;
+    background: rgba(#C48CAE, 0.1);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.products{
+  width: 1200px;
+  margin: 0 auto;
+  .products-title{
+    padding-top: 90px;
+    font-family: $fontPoppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+  }
+}
+
+.testimonial {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  .testimonial_block {
+    margin: 0 auto;
+    width: 555px;
+    height: 272px;
+    background: $colorWhite;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .swiper-container {
+    width: 555px;
+    height: 272px;
+  }
+  .icon {
+    display: flex;
+  }
+  .quotes {
+    opacity: 0.1;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .quotes2 {
+    opacity: 0.1;
+  }
+  .man-icon {
+    margin-top: 30px;
+    margin-left: 185px;
+    width: 30px;
+    height: 30px;
+  }
+  .testimonial-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 495px;
+    height: 65px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $colorDarkGray;
+    opacity: 0.7;
+  }
+  .fa{
+    margin-right: 0;
+    margin-left: 0;
+    color: #E2E2E2;
+  }
+  .checked {
+    color: $colorOrange;
+  }
+  .mark{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .text_with_quotes{
+    margin-top: 23px;
+    display: flex;
+  }
+  .quotes_a{
+    margin-left: 220px;
+  }
+  .quotes_b{
+    margin-right: 30px;
+    margin-left: auto;
+  }
+  .quotes-text{
+    margin-top: 0;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .quotes-desc{
+    margin-top: 0;
+    @include font_style-Roboto;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: $colorDarkGray;
+    opacity: 0.6;
+  }
+  .arrows{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 73px;
+    margin-bottom: 50px;
+  }
+  .button-prev:hover{
+    cursor: pointer;
+  }
+  .button-next:hover{
+    cursor: pointer;
+  }
+}
+
+.form{
+  width: 1200px;
+  margin: 0 auto;
+  .form_message{
+    display: flex;
+    transform: rotate(-1deg);
+    margin-top: 86px;
+    width: 1140px;
+    height: 346px;
+    background: #2E96FF;
+    border-radius: 10px;
+  }
+  .form_title{
+    width: 423px;
+    height: 72px;
+    font-family: $fontPoppins;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+    transform: rotate(1deg);
+    padding-top: 70px;
+    padding-left: 69px;
+  }
+  .form_desc{
+    width: 423px;
+    height: 52px;
+    @include font_style-Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorWhite;
+    opacity: 0.7;
+    transform: rotate(1deg);
+    padding-left: 69px;
+  }
+  .form_input{
+    margin-top: 10px;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(1deg);
+  }
+  .input_field{
+    min-width: 350px;
+    height: 70px;
+    background: $colorWhite;
+    border-radius: 10px;
+    border: none;
+    padding-left: 21px;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+  }
+  ::placeholder{
+    @include font_style-Roboto;
+    font-size: 16px;
+  }
+  .message_box{
+    background: $colorWhite;
+    border-radius: 10px;
+  }
+  .send_button{
+    width: 115px;
+    height: 75px;
+    background: #E27B3A;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    font-family: $fontRoboto;
+    font-weight: 500;
+    font-size: 18px;
+    color: $colorWhite;
+  }
+  .send_button:hover{
+    background: #f7a048;
+    cursor: pointer;
+  }
+}

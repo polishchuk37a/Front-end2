@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin font_style-Roboto{
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font_style-Poppins{
+  font-family: $fontPoppins;
+  font-style: normal;
+  font-weight: normal;
+}
