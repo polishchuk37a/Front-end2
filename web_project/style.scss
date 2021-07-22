@@ -1,5 +1,6 @@
 @import "header";
 @import "body";
+@import "footer";
 @import "variables";
 @import "mixins";
 
@@ -14,4 +15,8 @@ body{
 
 ul{
   list-style-type: none;
+}
+
+html{
+  scroll-behavior: smooth;
 }

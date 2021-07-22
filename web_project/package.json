@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "micromodal": "^0.4.6",
     "sass": "^1.35.2",
     "swiper": "^6.7.5"
   }

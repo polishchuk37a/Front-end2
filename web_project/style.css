@@ -25,7 +25,6 @@
 
 .header_links {
   margin-top: 10px;
-  align-items: center;
   margin-left: 200px;
 }
 .header_links ul {
@@ -57,27 +56,59 @@
 }
 
 .header_block {
-  width: 1150px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 .header_block h1 {
   width: 613px;
-  height: 171px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 100px;
   line-height: 120px;
-  padding-top: 60px;
   position: absolute;
-  z-index: 2;
 }
-.header_block img {
-  z-index: 1;
-  position: relative;
+.header_block .puppy_image {
   margin-left: 370px;
-  mix-blend-mode: darken;
+  width: 900px;
+}
+
+.button-prev-header {
+  width: 32px;
+  transform: rotate(180deg);
+  margin: auto;
+}
+
+.button-prev-header:hover {
+  cursor: pointer;
+}
+
+.button-next-header {
+  width: 32px;
+  line-height: 16px;
+  margin: auto;
+}
+
+.button-next-header:hover {
+  cursor: pointer;
+}
+
+.prev-arrow {
+  display: flex;
+}
+
+.next-arrow {
+  display: flex;
+}
+
+.swiper-header-container {
+  width: 1300px;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  --swiper-theme-color: black;
 }
 
 .food_for_pets .third_variant, .food_for_pets .first_variant {
@@ -96,9 +127,7 @@
   font-family: Poppins, sans-serif;
   font-weight: normal;
   font-size: 25px;
-  line-height: 37px;
   text-align: center;
-  color: #170C04;
   margin-left: auto;
   margin-right: auto;
 }
@@ -118,12 +147,8 @@
 }
 
 .leash_block .see_details a, .food_for_pets .third_variant .see_details a, .food_for_pets .second_variant .see_details a, .food_for_pets .first_variant .see_details a {
-  width: 80px;
-  height: 24px;
   font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: #E27B3A;
   text-decoration: none;
 }
@@ -172,6 +197,18 @@
 .food_for_pets .second_variant a:hover {
   text-decoration: underline;
 }
+.food_for_pets .first_variant:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
+.food_for_pets .second_variant:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
+.food_for_pets .third_variant:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
 .food_for_pets .third_variant img {
   position: absolute;
   margin: -27px 148px;
@@ -194,21 +231,11 @@
   margin: 0 auto;
 }
 
-.popular_products {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .popular_products-title {
-  width: 280px;
-  height: 42px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 32px;
-  line-height: 48px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .popular_products-text {
@@ -248,7 +275,6 @@
 }
 .leash_block .leash_title {
   margin-left: 30px;
-  width: 555px;
   height: 25px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -297,7 +323,6 @@
   text-align: center;
   margin-left: 30px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
 }
@@ -328,6 +353,7 @@
 }
 .view_all_products .button_view_products:hover {
   background: #f0ebeb;
+  cursor: pointer;
 }
 
 .dog_care {
@@ -335,7 +361,6 @@
   margin: 0 auto;
   display: flex;
   padding-top: 130px;
-  clip-path: url(#border);
 }
 .dog_care .mask {
   position: absolute;
@@ -347,8 +372,6 @@
 }
 .dog_care .dog_care-title {
   padding-top: 125px;
-  width: 127px;
-  height: 10px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -389,8 +412,109 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: white;
+}
+.dog_care .button_order {
+  width: 150px;
+  height: 50px;
+  background: #E27B3A;
+  border-radius: 20px;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.dog_care .modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.dog_care .modal-content {
+  border-radius: 20px;
+  transform: translate(0, 50%);
+  position: relative;
+  background-color: #FFFFFF;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dog_care .close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dog_care .close:hover,
+.dog_care .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dog_care .modal-header {
+  padding: 2px 16px;
+  color: white;
+}
+.dog_care .modal-header h2 {
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+.dog_care .modal-body {
+  padding: 2px 16px;
+}
+.dog_care .modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.dog_care .animate__bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.dog_care .button_appointment:hover {
+  background: #f7a048;
+  cursor: pointer;
 }
 .dog_care .button_details {
   margin-left: 30px;
@@ -406,6 +530,10 @@
   line-height: 24px;
   color: #E27B3A;
 }
+.dog_care .button_details:hover {
+  cursor: pointer;
+  background: #f0ebeb;
+}
 
 .monthly_subscription {
   width: 1200px;
@@ -416,10 +544,8 @@
   width: 330px;
   height: 93px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -445,7 +571,6 @@
   width: 360px;
   height: 49px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -458,7 +583,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
   text-align: center;
   color: #170C04;
   opacity: 0.6;
@@ -494,8 +618,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: #FFFFFF;
+}
+.block_button_subs .button_subscribe:hover {
+  background: #f7a048;
+  cursor: pointer;
 }
 
 .dog_accessories .fourth_background, .dog_accessories .third_background, .dog_accessories .second_background, .dog_accessories .first_background {
@@ -513,10 +640,8 @@
   width: 554px;
   height: 46px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
   text-align: center;
 }
 .dog_accessories .second_variant_accessories {
@@ -572,10 +697,8 @@
 .products .products-title {
   padding-top: 90px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
   text-align: center;
 }
 
@@ -681,6 +804,12 @@
   height: 73px;
   margin-bottom: 50px;
 }
+.testimonial .button-prev:hover {
+  cursor: pointer;
+}
+.testimonial .button-next:hover {
+  cursor: pointer;
+}
 
 .form {
   width: 1200px;
@@ -723,13 +852,15 @@
   padding-left: 69px;
 }
 .form .form_input {
+  margin-top: 10px;
+  margin-left: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: rotate(1deg);
 }
 .form .input_field {
-  width: 487px;
+  min-width: 350px;
   height: 70px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -751,7 +882,7 @@
 }
 .form .send_button {
   width: 115px;
-  height: 72px;
+  height: 75px;
   background: #E27B3A;
   border-radius: 0 10px 10px 0;
   border: none;
@@ -759,6 +890,112 @@
   font-weight: 500;
   font-size: 18px;
   color: #FFFFFF;
+}
+.form .send_button:hover {
+  background: #f7a048;
+  cursor: pointer;
+}
+
+#myBtn {
+  display: none;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  width: 70px;
+  height: 60px;
+  transition: 0.2s;
+}
+
+.footer {
+  margin-top: 150px;
+  width: 100%;
+  height: 330px;
+  background: #140A03;
+  justify-content: center;
+}
+.footer .footer_section {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer_icon {
+  text-align: center;
+}
+.footer .footer_info {
+  display: flex;
+}
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer li a {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.footer .second_link {
+  margin-top: 40px;
+}
+.footer .third_link {
+  margin-top: 40px;
+}
+.footer .footer_networks {
+  text-align: center;
+  margin-left: 225px;
+}
+.footer .product-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 26px;
+  height: 20px;
+  color: #FFFFFF;
+}
+.footer .networks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.footer .footer__links {
+  margin-left: auto;
+}
+.footer .footer__links ul {
+  text-align: end;
+}
+.footer .footer__links .first__link {
+  margin-left: auto;
+}
+.footer .footer__links .second__link {
+  margin-top: 40px;
+}
+.footer .footer__links .third__link {
+  margin-top: 40px;
+}
+.footer li a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  margin-top: -59px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-bottom: 60px solid #140A03;
 }
 
 body {
@@ -772,6 +1009,10 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,6 @@
 
 .header_links {
   margin-top: 10px;
-  align-items: center;
   margin-left: 200px;
 }
 .header_links ul {
@@ -57,27 +56,59 @@
 }
 
 .header_block {
-  width: 1150px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 .header_block h1 {
   width: 613px;
-  height: 171px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 100px;
   line-height: 120px;
-  padding-top: 60px;
   position: absolute;
-  z-index: 2;
 }
-.header_block img {
-  z-index: 1;
-  position: relative;
+.header_block .puppy_image {
   margin-left: 370px;
-  mix-blend-mode: darken;
+  width: 900px;
+}
+
+.button-prev-header {
+  width: 32px;
+  transform: rotate(180deg);
+  margin: auto;
+}
+
+.button-prev-header:hover {
+  cursor: pointer;
+}
+
+.button-next-header {
+  width: 32px;
+  line-height: 16px;
+  margin: auto;
+}
+
+.button-next-header:hover {
+  cursor: pointer;
+}
+
+.prev-arrow {
+  display: flex;
+}
+
+.next-arrow {
+  display: flex;
+}
+
+.swiper-header-container {
+  width: 1300px;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  --swiper-theme-color: black;
 }
 
 /*# sourceMappingURL=header.css.map */
