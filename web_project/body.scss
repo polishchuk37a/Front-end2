@@ -880,3 +880,36 @@
   height: 60px;
   transition: 0.2s;
 }
+
+.my-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  background: red;
+  z-index: 1000;
+
+  pointer-events: none;
+  opacity: 0;
+
+  will-change: transform, opacity;
+
+  transform: scale(1.15);
+
+  transition:
+          transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+          opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+
+  &.visible {
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+
+    transition:
+            transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+            opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  }
+}

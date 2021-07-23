@@ -225,6 +225,11 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="my-modal">
+                            <h1>text</h1>
+                            <button class="close">close</button>
+                        </div>
                     </div>
 
 
@@ -514,14 +519,21 @@
 
         var span = document.getElementsByClassName("close")[0];
 
+        var closeBtn = document.querySelector('button.close');
+
+        var myModal = document.querySelector('.my-modal');
+
         btn.onclick = function() {
-            setTimeout(() => modal.classList.add('animate__bounceInLeft'), 10);
-            modal.classList.remove('animate__bounceInLeft');
-            modal.style.display = "block";
+            myModal.classList.add('visible');
+            // setTimeout(() => modal.classList.add('animate__bounceInLeft'), 10);
+            // modal.classList.remove('animate__bounceInLeft');
+            // modal.style.display = "block";
         }
 
-        span.onclick = function() {
-           modal.classList.add('animate__bounceOutRight');
+        closeBtn.onclick = function() {
+          console.log('t')
+           // modal.classList.add('animate__bounceOutRight');
+          myModal.classList.remove('visible');
         }
 
         window.onclick = function(event) {
