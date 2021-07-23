@@ -515,14 +515,13 @@
         var span = document.getElementsByClassName("close")[0];
 
         btn.onclick = function() {
+            setTimeout(() => modal.classList.add('animate__bounceInLeft'), 10);
             modal.classList.remove('animate__bounceInLeft');
-            modal.classList.add('animate__bounceInLeft');
             modal.style.display = "block";
         }
 
         span.onclick = function() {
-            //modal.classList.remove('');
-            modal.style.display = "none";
+           modal.classList.add('animate__bounceOutRight');
         }
 
         window.onclick = function(event) {
