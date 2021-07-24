@@ -6,13 +6,11 @@
   height: 693px;
   background: linear-gradient(106deg, #fff 68%, #FCF2EB 32%)
 }
-
 .header_elements{
   display: flex;
   width: 1150px;
   margin: 0 auto;
 }
-
 .header_icon{
   display: flex;
   margin-top: 10px;
@@ -25,10 +23,8 @@
     padding-left: 5px;
   }
 }
-
 .header_links{
   margin-top: 10px;
-  align-items: center;
   margin-left: 200px;
   ul {
     padding-top: 10px;
@@ -50,7 +46,6 @@
     text-decoration: underline;
   }
 }
-
 .header_buttons{
   display: flex;
   margin-left: 205px;
@@ -58,36 +53,24 @@
     margin-left: 40px;
   }
 }
-
 .header_block{
   width: 1200px;
   margin: 0 auto;
   display : flex;
   h1{
     width: 613px;
-    height: 171px;
     font-family: $fontPoppins;
-    font-style: normal;
-    font-weight: bold;
     font-size: 100px;
     line-height: 120px;
-    padding-top: 60px;
     position: absolute;
-    z-index: 2;
   }
   .puppy_image{
-    z-index: 1;
-    position: relative;
     margin-left: 370px;
     width: 900px;
-    height: 600px;
   }
 }
-
 .button-prev-header{
-  padding-bottom: 300px;
   width: 32px;
-  height: 32px;
   transform: rotate(180deg);
   margin: auto;
 }
@@ -95,29 +78,26 @@
   cursor: pointer;
 }
 .button-next-header{
-  padding-top: 300px;
   width: 32px;
-  height: 32px;
   line-height: 16px;
   margin: auto;
 }
 .button-next-header:hover{
   cursor: pointer;
 }
-
 .prev-arrow{
-  width:35px;
-  height: 600px;
   display: flex;
 }
 .next-arrow{
-  width:35px;
-  height: 600px;
   display: flex;
 }
-
 .swiper-header-container {
   width: 1300px;
-  height: 600px;
+  height: 620px;
   overflow: hidden;
+  position: relative;
 }
+.swiper-pagination-bullet {
+  --swiper-theme-color: black;
+}
+

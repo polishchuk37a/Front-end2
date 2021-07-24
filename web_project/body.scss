@@ -9,7 +9,6 @@
   border-radius: 8px;
   margin-left: 35px;
 }
-
 %food-title{
   padding-top: 20px;
   width: 310px;
@@ -17,13 +16,10 @@
   font-family: $fontPoppins;
   font-weight: normal;
   font-size: 25px;
-  line-height: 37px;
   text-align: center;
-  color: $colorDarkGray;
   margin-left: auto;
   margin-right: auto;
 }
-
 %food-text{
   width: 298px;
   height: 55px;
@@ -37,24 +33,17 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 %see-details{
-  width: 80px;
-  height: 24px;
   font-family: $fontRoboto;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: $colorOrange;
   text-decoration: none;
 }
-
 .food_for_pets{
   display: flex;
   width: 1200px;
   margin: 0 auto;
   padding-top: 159px;
-
   .first_variant{
     @extend %food-form;
     img{
@@ -82,7 +71,6 @@
       text-decoration: underline;
     }
   }
-
   .second_variant{
     margin-left: 30px;
     width: 360px;
@@ -115,7 +103,18 @@
       text-decoration: underline;
     }
   }
-
+  .first_variant:hover{
+    box-shadow: 0 0 20px $colorOrange;
+    transition: 0.5s;
+  }
+  .second_variant:hover{
+    box-shadow: 0 0 20px $colorOrange;
+    transition: 0.5s;
+  }
+  .third_variant:hover{
+    box-shadow: 0 0 20px $colorOrange;
+    transition: 0.5s;
+  }
   .third_variant{
     @extend %food-form;
     img{
@@ -144,26 +143,16 @@
     }
   }
 }
-
 .popular_products{
   padding-top: 115px;
   width: 1200px;
   margin: 0 auto;
 }
-.popular_products{
-  margin-left: auto;
-  margin-right: auto;
-}
 .popular_products-title{
-  width: 280px;
-  height: 42px;
   font-family: $fontPoppins;
   font-weight: 500;
   font-size: 32px;
-  line-height: 48px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .popular_products-text{
   width: 505px;
@@ -178,7 +167,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 %illustration-block{
   width: 555px;
   height: 420px;
@@ -187,7 +175,6 @@
   display: flex;
   align-items: center;
 }
-
 .leash_block{
   width: 1200px;
   margin: 0 auto;
@@ -202,7 +189,6 @@
   }
   .leash_title{
     margin-left: 30px;
-    width: 555px;
     height: 25px;
     font-family: $fontPoppins;;
     font-weight: 500;
@@ -219,21 +205,18 @@
     text-decoration: underline;
   }
 }
-
 %leash_second{
   width: 360px;
   height: 273px;
   background: $colorLightOrange;
   border-radius: 10px;
 }
-
 %view-details{
   @include font_style-Roboto;
   font-size: 16px;
   color: $colorOrange;
   text-decoration: none;
 }
-
 .leash_second_block{
   width: 1200px;
   display: flex;
@@ -253,13 +236,11 @@
     text-align: center;
     margin-left: 30px;
     font-family: $fontPoppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
   }
   .view_details a{
     @extend %view-details;
-
   }
   a:hover{
     text-decoration: underline;
@@ -268,7 +249,6 @@
     text-align: center;
   }
 }
-
 .view_all_products{
   margin: 0 auto;
   text-align: center;
@@ -289,27 +269,21 @@
     cursor: pointer;
   }
 }
-
 .dog_care{
-  width: 1400px;
+  width: 1300px;
   margin: 0 auto;
   display: flex;
   padding-top: 130px;
-  clip-path: url(#border);
   .mask {
     position: absolute;
-    width: 730px;
+    width: 740px;
     height: 539px;
     clip-path: url(#my-clip-path);
     background: white;
     z-index: 5;
   }
-
-
   .dog_care-title{
     padding-top: 125px;
-    width: 127px;
-    height: 10px;
     font-family: $fontRoboto;
     font-weight: 500;
     font-size: 16px;
@@ -346,9 +320,114 @@
     border: none;
     @include font_style-Roboto;
     font-size: 16px;
-    line-height: 24px;
     color: white;
   }
+
+  .modal-background {
+    position: fixed;
+    z-index: 5;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition:
+            transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+            opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+
+    &.visible {
+      pointer-events: auto;
+      opacity: 1;
+
+      transition:
+              transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+              opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    }
+  }
+
+  .my-modal {
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    background: $colorWhite;
+    z-index: 5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition:
+            transform 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+            opacity 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+
+    &.visible {
+      pointer-events: auto;
+      opacity: 1;
+      transform: translate(-50%, -50%);
+
+      transition:
+              transform 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+              opacity 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    }
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    color: white;
+    h2{
+      color: black;
+      @include font_style-Poppins;
+      font-size: 30px;
+    }
+    .close {
+      color: black;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    padding: 2px 16px;
+    width: 100%;
+    height: 630px;
+  }
+
+  .modal-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    .button_order{
+      width: 150px;
+      height: 50px;
+      background: $colorOrange;
+      border-radius: 20px;
+      border: none;
+      @include font_style-Roboto;
+      font-size: 16px;
+      color: white;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  }
+
   .button_appointment:hover{
     background: #f7a048;
     cursor: pointer;
@@ -370,7 +449,6 @@
     background: #f0ebeb;
   }
 }
-
 .monthly_subscription{
   width: 1200px;
   margin: 0 auto;
@@ -379,16 +457,13 @@
     width: 330px;
     height: 93px;
     font-family: $fontPoppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 45px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 .dogs{
   display: flex;
   width: 1200px;
@@ -408,7 +483,6 @@
     width: 360px;
     height: 49px;
     font-family: $fontPoppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
@@ -419,7 +493,6 @@
     height: 65px;
     @include font_style-Roboto;
     font-size: 16px;
-    line-height: 19px;
     text-align: center;
     color: #170C04;
     opacity: 0.6;
@@ -437,7 +510,6 @@
     text-decoration: underline;
   }
 }
-
 .block_button_subs{
   width: 1200px;
   margin: 0 auto;
@@ -451,21 +523,18 @@
     border: none;
     @include font_style-Roboto;
     font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
+    color: $colorWhite;
   }
   .button_subscribe:hover{
     background: #f7a048;
     cursor: pointer;
   }
 }
-
 %accessories{
   width: 262px;
   height: 170px;
   border-radius: 5px;
 }
-
 .dog_accessories{
   width: 1150px;
   display: flex;
@@ -474,10 +543,8 @@
     width: 554px;
     height: 46px;
     font-family: $fontPoppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 45px;
     text-align: center;
   }
   .second_variant_accessories{
@@ -530,21 +597,17 @@
     align-items: center;
   }
 }
-
 .products{
   width: 1200px;
   margin: 0 auto;
   .products-title{
     padding-top: 90px;
     font-family: $fontPoppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 45px;
     text-align: center;
   }
 }
-
 .testimonial {
   width: 600px;
   margin: 0 auto;
@@ -647,7 +710,6 @@
     cursor: pointer;
   }
 }
-
 .form{
   width: 1200px;
   margin: 0 auto;
@@ -727,4 +789,18 @@
     background: #f7a048;
     cursor: pointer;
   }
+}
+#myBtn {
+  display: none;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+#myBtn:hover {
+  width: 70px;
+  height: 60px;
+  transition: 0.2s;
 }

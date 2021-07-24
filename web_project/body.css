@@ -14,9 +14,7 @@
   font-family: Poppins, sans-serif;
   font-weight: normal;
   font-size: 25px;
-  line-height: 37px;
   text-align: center;
-  color: #170C04;
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,12 +34,8 @@
 }
 
 .leash_block .see_details a, .food_for_pets .third_variant .see_details a, .food_for_pets .second_variant .see_details a, .food_for_pets .first_variant .see_details a {
-  width: 80px;
-  height: 24px;
   font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: #E27B3A;
   text-decoration: none;
 }
@@ -90,6 +84,18 @@
 .food_for_pets .second_variant a:hover {
   text-decoration: underline;
 }
+.food_for_pets .first_variant:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
+.food_for_pets .second_variant:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
+.food_for_pets .third_variant:hover {
+  box-shadow: 0 0 20px #E27B3A;
+  transition: 0.5s;
+}
 .food_for_pets .third_variant img {
   position: absolute;
   margin: -27px 148px;
@@ -112,21 +118,11 @@
   margin: 0 auto;
 }
 
-.popular_products {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .popular_products-title {
-  width: 280px;
-  height: 42px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 32px;
-  line-height: 48px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .popular_products-text {
@@ -166,7 +162,6 @@
 }
 .leash_block .leash_title {
   margin-left: 30px;
-  width: 555px;
   height: 25px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -215,7 +210,6 @@
   text-align: center;
   margin-left: 30px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
 }
@@ -250,15 +244,14 @@
 }
 
 .dog_care {
-  width: 1400px;
+  width: 1300px;
   margin: 0 auto;
   display: flex;
   padding-top: 130px;
-  clip-path: url(#border);
 }
 .dog_care .mask {
   position: absolute;
-  width: 730px;
+  width: 740px;
   height: 539px;
   clip-path: url(#my-clip-path);
   background: white;
@@ -266,8 +259,6 @@
 }
 .dog_care .dog_care-title {
   padding-top: 125px;
-  width: 127px;
-  height: 10px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -308,8 +299,95 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: white;
+}
+.dog_care .modal-background {
+  position: fixed;
+  z-index: 5;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.dog_care .modal-background.visible {
+  pointer-events: auto;
+  opacity: 1;
+  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.dog_care .my-modal {
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 500px;
+  background: #FFFFFF;
+  z-index: 5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.dog_care .my-modal.visible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+.dog_care .modal-header {
+  padding: 2px 16px;
+  color: white;
+}
+.dog_care .modal-header h2 {
+  color: black;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+.dog_care .modal-header .close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dog_care .modal-header .close:hover,
+.dog_care .modal-header .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dog_care .modal-body {
+  padding: 2px 16px;
+  width: 100%;
+  height: 630px;
+}
+.dog_care .modal-footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.dog_care .modal-footer .button_order {
+  width: 150px;
+  height: 50px;
+  background: #E27B3A;
+  border-radius: 20px;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 .dog_care .button_appointment:hover {
   background: #f7a048;
@@ -343,10 +421,8 @@
   width: 330px;
   height: 93px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -372,7 +448,6 @@
   width: 360px;
   height: 49px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -385,7 +460,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
   text-align: center;
   color: #170C04;
   opacity: 0.6;
@@ -421,7 +495,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   color: #FFFFFF;
 }
 .block_button_subs .button_subscribe:hover {
@@ -444,10 +517,8 @@
   width: 554px;
   height: 46px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
   text-align: center;
 }
 .dog_accessories .second_variant_accessories {
@@ -503,10 +574,8 @@
 .products .products-title {
   padding-top: 90px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 32px;
-  line-height: 45px;
   text-align: center;
 }
 
@@ -702,6 +771,22 @@
 .form .send_button:hover {
   background: #f7a048;
   cursor: pointer;
+}
+
+#myBtn {
+  display: none;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  width: 70px;
+  height: 60px;
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=body.css.map */

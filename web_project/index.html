@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -72,7 +73,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
+
                     <div class="next-arrow">
                         <img class="button-next-header" src="Images/arrow.png" alt="">
                     </div>
@@ -116,6 +119,7 @@
             </div>
         </div>
 
+        <img onclick="topFunction()" id="myBtn" src="Images/pngwing.png" alt="">
 
         <div class="popular_products">
             <h1 class="popular_products-title">Popular Products</h1>
@@ -201,7 +205,22 @@
                 <h1 class="dog_care-text">A dog in heat needs more than shade The more people I meet the more I like my dog.The more people I meet the more I like my Dogs leave paw prints forever on our hearts.</h1>
                 <div class="dog_care-buttons">
                     <div>
-                        <button class="button_appointment">Appointment Now</button>
+                        <button class="button_appointment" id="appointment_btn">Appointment Now</button>
+                        <div class="modal-background">
+                            <div class="my-modal">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2>Your order:</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="dog_care-desc">Start your adoption journey with us</h1>
+                                    <h1 class="dog_care-text">A dog in heat needs more than shade The more people I meet the more I like my dog.The more people I meet the more I like my Dogs leave paw prints forever on our hearts.</h1>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="button_order">Order</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <button class="button_details">See Details</button>
@@ -282,7 +301,7 @@
             <h1 class="products-title">Products Testimonial</h1>
         </div>
 
-<   <div class="testimonial">
+        <div class="testimonial">
         <div class="testimonial_block">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -388,6 +407,7 @@
                 </div>
             </div>
         </div>
+
         <footer class="footer">
             <div class="footer_section">
                 <div class=footer_icon>
@@ -440,17 +460,10 @@
         const swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
 
             navigation: {
                 nextEl: '.button-next',
                 prevEl: '.button-prev',
-            },
-
-            scrollbar: {
-                el: '.swiper-scrollbar',
             },
         });
     </script>
@@ -459,12 +472,58 @@
             direction: 'horizontal',
             loop: true,
 
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
             navigation: {
                 nextEl: '.button-next-header',
                 prevEl: '.button-prev-header',
             },
-
         });
+    </script>
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var btn = document.getElementById("appointment_btn");
+
+        var modalBackground = document.querySelector('.modal-background');
+
+        var closeBtn = document.querySelector('.close');
+
+        var myModal = document.querySelector('.my-modal');
+
+        btn.onclick = function() {
+            myModal.classList.add('visible');
+            modalBackground.classList.add('visible');
+        }
+
+        closeBtn.onclick = function() {
+            myModal.classList.remove('visible');
+            modalBackground.classList.remove('visible');
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modalBackground) {
+                myModal.classList.remove('visible');
+                modalBackground.classList.remove('visible');
+            }
+        }
     </script>
 </body>
 </html>
